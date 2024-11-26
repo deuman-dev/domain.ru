@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Моё Портфолио</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="/img/fav/favicon-32x32.png">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+         
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        
+        .column img {
+            margin-top: 4px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 700px) {
+            .column {
+                flex: 50%;
+                max-width: 50%
+            }
+        }
+        
+        @media (max-width: 300px) {
+            .column {
+                flex: 100%;
+                max-width: 100%
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .row .navbar {
+                flex-direction: column;
+            }
+        }
+     </style>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <h1>Мое портфолио</h1>
+    <p>Веб сайт построен с <b>использованием</b> технологий<br> HTML и CSS</p>
+    </div>
+
+<!-- Навигационное меню -->
+
+<div class="navbar">
+    <a href="../index.html" class="nv-active">Главная</a>
+    <a href="page1.html">Галерея</a>
+    <a href="page3.html">Контакты</a>
+    </div>
+<!-- Основной блок -->
+<form id="feedbackForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="message">Сообщение:</label>
+    <textarea id="message" name="message" required></textarea>
+  
+    <button type="submit">Отправить</button>
+  </form><br> 
+ <br>
+ <br>
+ <br>
+   
+    <!--  Footer -->
+<div class="footer">
+    <div class="ft-left">
+    <div class="ft-center">
+	<a href="https://vk.ru"> <img src="../img/fav/vk-ico.ico" width="70" height="70" alt=""> <a/>
+    <a href="mailto:webmonster@bk.ru"> <img src="../img/fav/emailmessage.ico" width="70" height="70" alt=""> </a>
+    <a href="https://t.me/+N6mwBKix4uwOZGNi"> <img src="../img/fav/telegram_icon.ico" width="70" height="70" alt=""> <a/>
+	<h3 align ="center"> (C) Copyright website 2024 </h3>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
